@@ -8,13 +8,12 @@ define([
 
         defaults: {
             from:'en', // translate from language
-            to:'is',   //translate to language
-            value:''
+            to:'es',   //translate to language
+            value:''   //text for translation
 
         },
 
         initialize:function(){
-            console.log('Main:init');
             this.on('set-arguments', this._setData, this);
         },
 
@@ -33,11 +32,11 @@ define([
         // check if 'from' value is correct
         _checkLangs:function(data){
             var en = 'en',  //English
-                is = 'is';  //Spanish
+                es = 'es';  //Spanish
 
             if(data.from && data.from===en){
-                data.to = is;
-            }else if(data.from && data.from === is){
+                data.to = es;
+            }else if(data.from && data.from === es){
                 data.to = en;
             }else{
                 // set default value when 'from' is incorrect

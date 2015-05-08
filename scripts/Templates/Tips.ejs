@@ -1,0 +1,8 @@
+<h4>Maybe you want to enter:</h4>
+<ul>
+    <%_.each(tips, function(item){%>
+    <li>
+        <a href="#<%=model.from%>/<%=model.to%>/<%=encodeURI(item)%>" data-value = '<%=item%>'><%=item%></a>
+    </li>
+    <%});%>
+</ul>

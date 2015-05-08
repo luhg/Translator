@@ -13,17 +13,19 @@
     <div class="col-xs-6">
         <ul class="nav nav-tabs">
             <li role="presentation" class="<%=_checkLang('en')%>"><a href="#" data-lang = "en">English</a></li>
-            <li role="presentation" class="<%=_checkLang('is')%>"><a href="#" data-lang = "is">Spanish</a></li>
+            <li role="presentation" class="<%=_checkLang('es')%>"><a href="#" data-lang = "es">Spanish</a></li>
         </ul>
         <textarea name="from" class="form-control" id="input_value"><%-json.value%></textarea>
+        <div id="tips"></div>
     </div>
     <div class="col-xs-6">
         <ul class="nav nav-tabs">
-            <li role="presentation" class="<%=_checkLang('is')%>"><a href="#" data-lang = "is">English</a></li>
+            <li role="presentation" class="<%=_checkLang('es')%>"><a href="#" data-lang = "es">English</a></li>
             <li role="presentation" class="<%=_checkLang('en')%>"><a href="#" data-lang = "en">Spanish</a></li>
         </ul>
-        <div class="translated" id="translated_value"> Some output value</div>
+        <div class="translated" id="translated_value"></div>
     </div>
 </div>
+
 
 
