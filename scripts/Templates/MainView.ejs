@@ -1,0 +1,29 @@
+<h1>Translator</h1>
+
+<%
+    var json = model.toJSON(),
+        _checkLang = function(lang){
+            return json.from==lang?'active':'';
+        };
+    console.log('json is:', json);
+
+%>
+
+<div class="row lang-block">
+    <div class="col-xs-6">
+        <ul class="nav nav-tabs languages">
+            <li role="presentation" class="<%=_checkLang('en')%>"><a href="#">English</a></li>
+            <li role="presentation" class="<%=_checkLang('is')%>"><a href="#">Spanish</a></li>
+        </ul>
+        <textarea name="from" class="form-control" id="input_value"><%-json.value%></textarea>
+    </div>
+    <div class="col-xs-6">
+        <ul class="nav nav-tabs languages">
+            <li role="presentation" class="<%=_checkLang('is')%>"><a href="#">English</a></li>
+            <li role="presentation" class="<%=_checkLang('en')%>"><a href="#">Spanish</a></li>
+        </ul>
+        <div class="translated" id="translated_value"> Some output value</div>
+    </div>
+</div>
+
+

@@ -1,0 +1,36 @@
+// import bootstrap
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+//variables
+$text-height: 140px;
+$text-space:20px;
+$text-size:18px;
+$bg:#f5f5f5;
+
+
+.text-value{
+  resize: vertical;
+  min-height: $text-height;
+  margin-top: $text-space;
+  min-width:100%;
+  font-size: $text-size;
+  padding: 6px 12px;
+}
+
+
+#input_value,
+.translated
+{
+  @extend .text-value;
+}
+
+.translated{
+  background: $bg;
+}
+
+.row.lang-block{
+  .col-xs-6{
+    width: 50% !important;
+  }
+}
