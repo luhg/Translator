@@ -97,4 +97,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('serve', ['jshint','jst','sass','connect','watch']);
+    grunt.registerTask('default',['serve']);
 };
