@@ -10,7 +10,6 @@ define([
         url:'/json/flashcard_input.json',
 
         initialize:function(){
-            console.log('Model:init()');
             this._fetch();
         },
 
